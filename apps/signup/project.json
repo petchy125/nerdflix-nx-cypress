@@ -1,6 +1,6 @@
 {
   "name": "signup",
-  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "signup",
   "projectType": "application",
   "targets": {
