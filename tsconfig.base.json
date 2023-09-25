@@ -14,7 +14,15 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nerdflix-nx-cypress/shared/assets/*": ["libs/shared/assets/*"],
+      "@nerdflix-nx-cypress/shared/common/*": ["libs/shared/common/*"],
+      "@nerdflix-nx-cypress/shared/components/*": ["libs/shared/components/src/lib/*"],
+      "@nerdflix-nx-cypress/shared/constants": ["libs/shared/constants/index.ts"],
+      "@nerdflix-nx-cypress/shared/constants/*": ["libs/shared/constants/*"],
+      "@nerdflix-nx-cypress/shared/types": ["libs/shared/types/index.ts"],
+      "@nerdflix-nx-cypress/shared/utils/*": ["libs/shared/utils/*"],
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
