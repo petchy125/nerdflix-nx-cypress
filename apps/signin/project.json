@@ -23,6 +23,8 @@
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "signin:build",
+        "hmr": true,
+        "port": 4204,
         "dev": true
       },
       "configurations": {
