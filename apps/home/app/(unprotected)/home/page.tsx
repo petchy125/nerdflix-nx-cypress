@@ -1,11 +1,11 @@
-import Feature from '../container/feature';
-import OptForm from '@/app/container/opt-form';
-import Hero from '../components/hero';
-import Jumbotron from '../container/jumbotron';
-import Faq from '@/app/container/faq';
+import Feature from '@nerdflix-nx-cypress/shared/container/feature';
+import OptForm from '@nerdflix-nx-cypress/shared/container/opt-form';
+import Hero from '@nerdflix-nx-cypress/shared/components/hero';
+import Jumbotron from '@nerdflix-nx-cypress/shared/container/jumbotron';
+import Faq from '@nerdflix-nx-cypress/shared/container/faq';
 import type { Metadata } from 'next';
 
-import jumboData from '../../fixtures/jumbo.json';
+import jumboData from '@nerdflix-nx-cypress/shared/fixtures/jumbo.json';
 
 export const metadata: Metadata = {
   title: 'Nerdflix',

@@ -2,9 +2,9 @@
 
 import Image from 'next/image';
 import { twMerge as tm } from 'tailwind-merge';
-import PlayIcon from '@/app/container/icons/play';
-import ExclamationCircleIcon from '@/app/container/icons/exclamation-circle';
-import { Show } from '@/types';
+import PlayIcon from '@nerdflix-nx-cypress/shared/container/icons/play';
+import ExclamationCircleIcon from '@nerdflix-nx-cypress/shared/container/icons/exclamation-circle';
+import { Show } from '../../../types';
 import ShowModal from './show-modal';
 import React, { useState } from 'react';
 

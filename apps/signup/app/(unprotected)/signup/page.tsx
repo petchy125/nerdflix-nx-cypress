@@ -1,5 +1,5 @@
-import Hero from '@/app/components/hero';
-import SignUpForm from '@/app/components/signup-form';
+import Hero from '@nerdflix-nx-cypress/shared/components/hero';
+import SignUpForm from '@nerdflix-nx-cypress/shared/components/signup-form';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

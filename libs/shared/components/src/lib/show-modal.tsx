@@ -8,8 +8,8 @@ import {
   DialogContent,
   DialogTitle,
   DialogDescription,
-} from '@/app/container/dialog';
-import type { Show } from '@/types';
+} from '@nerdflix-nx-cypress/shared/container/dialog';
+import type { Show } from '../../../types';
 import { usePathname } from 'next/navigation';
 
 interface ShowModalProps {

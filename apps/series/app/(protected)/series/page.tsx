@@ -1,4 +1,4 @@
-import Hero from '@/app/components/hero';
+import Hero from '@nerdflix-nx-cypress/shared/components/hero';
 import { getSearchedResult, getShow } from '@/lib/fetcher';
 import Collections from '../../components/collections';
 import { getRandomShow } from '@/lib/util';

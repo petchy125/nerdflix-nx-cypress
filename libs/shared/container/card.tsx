@@ -1,5 +1,6 @@
 import { twMerge as tm } from 'tailwind-merge';
 import { HTMLAttributes, PropsWithChildren } from 'react';
+import React from 'react';
 
 function Card({ children }: PropsWithChildren) {
   return (

@@ -1,5 +1,5 @@
 import { Accordion } from './accordion';
-import faqsData from '@/fixtures/faq.json';
+import faqsData from '../fixtures/faq.json';
 import OptForm from './opt-form';
 
 export default function Faq() {

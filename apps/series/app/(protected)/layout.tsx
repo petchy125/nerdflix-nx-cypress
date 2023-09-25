@@ -1,7 +1,7 @@
 import { PropsWithChildren } from 'react';
 
-import { Nav } from '@/app/container/nav';
-import Footer from '@/app/container/footer';
+import { Nav } from '@nerdflix-nx-cypress/shared/container/nav';
+import Footer from '@nerdflix-nx-cypress/shared/container/footer';
 import { getServerSession } from 'next-auth';
 
 export default async function ProtectedLayout({ children }: PropsWithChildren) {

@@ -1,6 +1,6 @@
 import { twMerge as tm } from 'tailwind-merge';
 
-import { DivProps, HeadingProps } from '@/types';
+import { DivProps, HeadingProps } from '../types';
 import NextImage, { ImageProps } from 'next/image';
 
 function Jumbotron({

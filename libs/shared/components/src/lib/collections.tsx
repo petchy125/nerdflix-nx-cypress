@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { useState } from 'react';
+import Image from "next/image";
+import React, { useState } from "react";
 
-import Card from '@/app/container/card';
-import { Show } from '../../types';
-import { getSafeImageUrl } from '@/lib/util';
-import ShowModal from './show-modal';
+import Card from "../../../container/card";
+import { Show } from "../../../types";
+import { getSafeImageUrl } from "../../../utils/util";
+import ShowModal from "./show-modal";
 
 interface Collection {
   title: string;
@@ -27,7 +27,7 @@ export default function Collections({
 
   const renderShowItem = (show: Show) => {
     const src = getSafeImageUrl(show.backdrop_path);
-    const altText = show.title || show.name || 'show-image';
+    const altText = show.title || show.name || "show-image";
 
     return (
       <Card.Item

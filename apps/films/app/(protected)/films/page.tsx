@@ -1,7 +1,7 @@
 import Hero from '@nerdflix-nx-cypress/shared/components/hero';
-import { getSearchedResult, getShow } from '@/lib/fetcher';
-import Collections from '../../components/collections';
-import { getRandomShow } from '@/lib/util';
+import { getSearchedResult, getShow } from '@nerdflix-nx-cypress/shared/utils/fetcher';
+import Collections from '@nerdflix-nx-cypress/shared/components/collections';
+import { getRandomShow } from '@nerdflix-nx-cypress/shared/utils/util';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

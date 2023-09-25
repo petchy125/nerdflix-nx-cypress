@@ -1,7 +1,7 @@
 import { twMerge as tm } from 'tailwind-merge';
 import Image from 'next/image';
 
-import { ButtonProps, DivProps, InputProps, ParagraphProps } from '@/types';
+import { ButtonProps, DivProps, InputProps, ParagraphProps } from '../types';
 
 function OptForm({ children, className, ...restProps }: DivProps) {
   return (

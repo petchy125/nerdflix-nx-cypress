@@ -10,7 +10,7 @@ import {
 } from 'react';
 import Image from 'next/image';
 
-import { DivProps, HeadingProps } from '@/types';
+import { DivProps, HeadingProps } from '../../types';
 
 const ToggleContext = createContext<null | {
   toggle: boolean;

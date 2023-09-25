@@ -8,7 +8,7 @@ import { HTMLAttributes, PropsWithChildren, useState } from 'react';
 
 import logo from '../../../../public/logo.png';
 import searchIcon from '../../../../public/search.png';
-import { ButtonProps, DivProps, InputProps, TextLinkProps } from '@/types';
+import { ButtonProps, DivProps, InputProps, TextLinkProps } from '../../types';
 import { signOut } from 'next-auth/react';
 
 export default function Nav({ children }: PropsWithChildren) {

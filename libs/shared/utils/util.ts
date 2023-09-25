@@ -1,4 +1,4 @@
-import type { Show } from "@/types";
+import type { Show } from "../types";
 
 export function getSafeImageUrl(url: string | null) {
   if (!url)

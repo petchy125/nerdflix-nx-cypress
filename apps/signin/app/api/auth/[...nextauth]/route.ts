@@ -1,7 +1,7 @@
 import NextAuth from 'next-auth';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
-import { auth } from '@/lib/firebase';
+import { auth } from '@nerdflix-nx-cypress/shared/utils/firebase';
 
 type Credential = {
   email: string;
