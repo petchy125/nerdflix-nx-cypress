@@ -28,7 +28,8 @@
     "**/*.jsx",
     "../films/.next/types/**/*.ts",
     "../dist/films/.next/types/**/*.ts",
-    "next-env.d.ts"
+    "next-env.d.ts",
+    "../../films/.next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules",
