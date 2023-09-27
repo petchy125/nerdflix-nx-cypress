@@ -6,6 +6,7 @@ import Faq from '@nerdflix-nx-cypress/shared/container/faq';
 import type { Metadata } from 'next';
 
 import jumboData from '@nerdflix-nx-cypress/shared/fixtures/jumbo.json';
+import HomeBg from '@nerdflix-nx-cypress/shared/assets/resources/home-bg.jpg';
 
 export const metadata: Metadata = {
   title: 'Nerdflix',
@@ -18,7 +19,7 @@ export default function Page() {
      <Hero
         className="min-[601px]:h-[114vh] min-[645px]:h-screen"
         type="static"
-        src="/home-bg.jpg"
+        src={HomeBg}
       >
         <Feature className="leading-[1.15]">
           <Feature.Title>

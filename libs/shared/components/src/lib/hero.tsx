@@ -1,9 +1,9 @@
 'use client';
 
-import Image from 'next/image';
+import Image, { StaticImageData }  from 'next/image';
 import { twMerge as tm } from 'tailwind-merge';
-import PlayIcon from '@nerdflix-nx-cypress/shared/container/icons/play';
-import ExclamationCircleIcon from '@nerdflix-nx-cypress/shared/container/icons/exclamation-circle';
+import PlayIcon from '../../../container/icons/play';
+import ExclamationCircleIcon from '../../../container/icons/x-mark'
 import { Show } from '../../../types';
 import ShowModal from './show-modal';
 import React, { useState } from 'react';
@@ -13,7 +13,7 @@ type HeroProps = {
   show: Show;
 } | {
   type: 'static';
-  src: string;
+  src: StaticImageData;
   children: React.ReactNode;
 };
 

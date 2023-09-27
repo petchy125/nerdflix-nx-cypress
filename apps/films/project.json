@@ -9,7 +9,8 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/films"
+        "outputPath": "dist/films",
+        "postcssConfig": "apps/films/postcss.config.js"
       },
       "configurations": {
         "development": {

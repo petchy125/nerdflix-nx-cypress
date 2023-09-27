@@ -8,7 +8,7 @@ import {
   DialogContent,
   DialogTitle,
   DialogDescription,
-} from '@nerdflix-nx-cypress/shared/container/dialog';
+} from '../../../container/dialog';
 import type { Show } from '../../../types';
 import { usePathname } from 'next/navigation';
 
