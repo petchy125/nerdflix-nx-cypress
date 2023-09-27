@@ -1,5 +1,5 @@
 {
-  "name": "shared",
+  "name": "shared-container",
   "$schema": "../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/src",
   "projectType": "library",
@@ -10,6 +10,14 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["libs/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "component-test": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "libs/shared/container/cypress.config.ts",
+        "testingType": "component",
+        "skipServe": true
       }
     }
   }
