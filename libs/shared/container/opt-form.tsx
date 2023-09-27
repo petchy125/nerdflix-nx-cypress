@@ -2,7 +2,7 @@ import { twMerge as tm } from 'tailwind-merge';
 import Image from 'next/image';
 
 import { ButtonProps, DivProps, InputProps, ParagraphProps } from '../types';
-import ChevronRight from '@nerdflix-nx-cypress/shared/assets/resources/images/chevron-right.png';
+import ChevronRight from '@nerdflix-nx-cypress/shared/assets/resources/chevron-right.png';
 
 function OptForm({ children, className, ...restProps }: DivProps) {
   return (

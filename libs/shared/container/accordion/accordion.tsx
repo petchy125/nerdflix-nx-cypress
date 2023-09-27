@@ -11,7 +11,7 @@ import {
 import Image from 'next/image';
 
 import { DivProps, HeadingProps } from '../../types';
-import Open from '@nerdflix-nx-cypress/shared/assets/resources/images/add.png';
+import Open from '@nerdflix-nx-cypress/shared/assets/resources/add.png';
 
 const ToggleContext = createContext<null | {
   toggle: boolean;
