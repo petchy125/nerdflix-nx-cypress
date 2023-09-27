@@ -1,21 +1,33 @@
 import { PropsWithChildren } from 'react';
 
-import { Nav } from '@nerdflix-nx-cypress/shared/container/nav';
-import Footer from '@nerdflix-nx-cypress/shared/container/footer';
+import { Nav } from '../../../container/nav';
+import Footer from '../../../container/footer';
 import { getServerSession } from 'next-auth';
+import Provider from './providers/session-provider';
 
 export default async function ProtectedLayout({ children }: PropsWithChildren) {
   const session = await getServerSession();
 
+  function renderWhenSessionValid(element: JSX.Element) {
+    if (!session) return null;
+    return element;
+  }
+
   return (
     <div className="flex min-h-screen flex-col">
+      <Provider session={session}>
       <Nav.default>
         <Nav.Frame>
           <Nav.Group>
             <Nav.Logo />
+            {renderWhenSessionValid(
+                <>
             <Nav.TextLink href="/series">Series</Nav.TextLink>
             <Nav.TextLink href="/films">Films</Nav.TextLink>
+            </>
+              )}
           </Nav.Group>
+          {renderWhenSessionValid(
           <Nav.Group>
             <Nav.Search />
             <Nav.Profile>
@@ -31,6 +43,7 @@ export default async function ProtectedLayout({ children }: PropsWithChildren) {
               </Nav.Dropdown>
             </Nav.Profile>
           </Nav.Group>
+          )}
         </Nav.Frame>
       </Nav.default>
       <main className="flex-1">{children}</main>
@@ -70,6 +83,7 @@ export default async function ProtectedLayout({ children }: PropsWithChildren) {
         <Footer.Break />
         <Footer.Text>Netflix United Kingdom</Footer.Text>
       </Footer>
+      </Provider>
     </div>
   );
 }

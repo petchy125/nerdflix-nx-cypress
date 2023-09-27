@@ -6,10 +6,11 @@ import { twMerge as tm } from 'tailwind-merge';
 import Image from 'next/image';
 import { HTMLAttributes, PropsWithChildren, useState } from 'react';
 
-import logo from '../../../../public/logo.png';
-import searchIcon from '../../../../public/search.png';
+import logo from '@nerdflix-nx-cypress/shared/assets/resources/logo.png';
+import searchIcon from '@nerdflix-nx-cypress/shared/assets/resources/search.png';
 import { ButtonProps, DivProps, InputProps, TextLinkProps } from '../../types';
 import { signOut } from 'next-auth/react';
+import React from 'react';
 
 export default function Nav({ children }: PropsWithChildren) {
   return <nav>{children}</nav>;

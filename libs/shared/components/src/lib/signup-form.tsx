@@ -7,12 +7,12 @@ import { auth } from '../../../utils/firebase';
 import Form from '../../../container/form';
 
 export default function SignUp() {
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<String | null>(null);
   const [firstName, setFirstName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSignUp = async (e) => {
+  const handleSignUp = async (e:any) => {
     e.preventDefault();
 
     if (!firstName || !email || !password) {
@@ -34,7 +34,7 @@ export default function SignUp() {
         redirect: true,
         callbackUrl: '/series',
       });
-    } catch (error) {
+    } catch (error:any) {
       setError(error.message);
     }
   };

@@ -12,6 +12,9 @@ const nextConfig = {
     // See: https://github.com/gregberge/svgr
     svgr: false,
   },
+  images: {
+    domains: ['image.tmdb.org', 'via.placeholder.com'],
+  },
 };
 
 const plugins = [
