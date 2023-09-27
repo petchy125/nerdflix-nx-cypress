@@ -2,6 +2,7 @@ import { twMerge as tm } from 'tailwind-merge';
 import Image from 'next/image';
 
 import { ButtonProps, DivProps, InputProps, ParagraphProps } from '../types';
+import ChevronRight from '@nerdflix-nx-cypress/shared/assets/resources/images/chevron-right.png';
 
 function OptForm({ children, className, ...restProps }: DivProps) {
   return (
@@ -48,7 +49,7 @@ function Button({ children, className, ...restProps }: ButtonProps) {
     >
       {children}
       <Image
-        src="/chevron-right.png"
+        src={ChevronRight}
         className="icon ml-[10px] max-[1000px] max-[1000px]:w-4"
         width={24}
         height={24}
