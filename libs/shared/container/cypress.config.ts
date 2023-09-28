@@ -1,4 +1,5 @@
 import { nxComponentTestingPreset } from '@nx/next/plugins/component-testing';
+import { nxComponentTestingPreset } from '@nx/next/plugins/component-testing';
 import { defineConfig } from 'cypress';
 
 export default defineConfig({
