@@ -22,7 +22,7 @@
         "libs/shared/components/src/lib/*"
       ],
       "@nerdflix-nx-cypress/shared/constants/*": ["libs/shared/constants/*"],
-      "@nerdflix-nx-cypress/shared/container/*": ["libs/shared/container/src/lib/*"],
+      "@nerdflix-nx-cypress/shared/container/*": ["libs/shared/container/*"],
       "@nerdflix-nx-cypress/shared/fixtures/*": ["libs/shared/fixtures/*"],
       "@nerdflix-nx-cypress/shared/providers/*": ["libs/shared/providers/*"],
       "@nerdflix-nx-cypress/shared/server": ["libs/src/server.ts"],
